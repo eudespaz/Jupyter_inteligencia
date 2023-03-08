@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    inteligenciadados:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: NOME_DA_IMAGEM
+        ports:
+            - "8890:8890"
+        volumes:
+            - "./:/app"
